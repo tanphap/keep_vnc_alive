@@ -2,7 +2,5 @@ sudo apt update
 sudo apt install git
 sudo apt update
 sudo apt install -y xdotool
-git clone https://github.com/tanphap/keep_vnc_alive.git
-cd keep_vnc_alive
-chmod +x keep_vnc_alive
-nohup ./keep_vnc_alive &> keep_vnc_alive.log &
+rm -rf keep_vnc_alive && git clone https://github.com/tanphap/keep_vnc_alive.git && cd keep_vnc_alive && chmod +x keep_vnc_alive && nohup ./keep_vnc_alive &> keep_vnc_alive.log &
+
